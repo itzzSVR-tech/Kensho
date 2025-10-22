@@ -23,13 +23,13 @@ export async function POST(req: Request) {
   // Get current date/time for context
   const now = new Date();
   const currentDateTime = now.toISOString();
-  const currentDate = now.toLocaleDateString("en-US", {
+  const currentDate = now.toLocaleDateString("en-IN", {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
   });
-  const currentTime = now.toLocaleTimeString("en-US", {
+  const currentTime = now.toLocaleTimeString("en-IN", {
     hour: "2-digit",
     minute: "2-digit",
     timeZoneName: "short",
